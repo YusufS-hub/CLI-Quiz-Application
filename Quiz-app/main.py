@@ -1,6 +1,8 @@
 import anime
 import hxheasy
 import hxhmedium
+import hxhhard
+import hajimehard
 import os
 
 
@@ -76,6 +78,38 @@ def main():
                                 hxhmedium.question4()
                                 hxhmedium.question5()
                                 hxhmedium.all_points()
+                            elif hxh_option == 3:
+                                clear_menu()
+                                hxhhard.question1()
+                                hxhhard.question2()
+                                hxhhard.question3()
+                                hxhhard.question4()
+                                hxhhard.question5()
+                                hxhhard.all_points()
+                    elif anime_menu_option == 2:
+                        clear_menu()
+                        while True:
+                            anime.difficulty_hajime()
+                            hajime_option = int(input('Enter a number corresponding to what option you would like (0-3): '))
+                            if hajime_option == 0:
+                                clear_menu()
+                                print('You Have Returned To The Anime Menu')
+                                break
+                            elif hajime_option == 1:
+                                clear_menu()
+                                print('No Easy For this Anime')
+                                break
+                            elif hajime_option == 2:
+                                print('No Medium For this Anime')
+                                break
+                            elif hajime_option == 3:
+                                clear_menu()
+                                hajimehard.question1()
+                                hajimehard.question2()
+                                hajimehard.question3()
+                                hajimehard.question4()
+                                hajimehard.question5()
+                                hajimehard.all_points()
         except (ValueError, UnboundLocalError):
             print('Invalid Input Enter numbers (0-3)')
 main()

@@ -6,15 +6,16 @@ def reset_points():
 def question1():
     reset_points()
     global points
-    print('The 1st Question Is \nWhat type of Nen user is Gon?')
-    print(r"+----------------------------+")
-    print(r"| a - Emitter                |")
-    print(r"| b - Enhancer               |")
-    print(r"| c - Transmitter            |")
-    print(r"+----------------------------+")
+    print('Starting Hard Hajime No Ippo Quiz !')
+    print('The 1st Question Is \nWhat unusual item does Takamura keep in his locker as a “good luck charm”?')
+    print(r"+----------------------------===========+")
+    print(r"| a - A gravure magazine                |")
+    print(r"| b - A lucky coin                      |")
+    print(r"| c - A picture of himself flexing      |")
+    print(r"+---------------------------------------+")
 
     while True:
-        answer = input('Enter Your Answer a, b or c: ').lower()
+        answer = input('Enter Your Answer a, b or c: ')
         if answer != 'a' and answer != 'b' and answer != 'c':
             print('Enter a, b or c ! ')
             continue
@@ -22,11 +23,11 @@ def question1():
             print('Incorrect!')
             break
         elif answer == 'b':
-            print('Correct! 1 point')
-            points += 1
+            print('Incorrect!')
             break
         elif answer == 'c':
-            print('Incorrect!')
+            print('Correct! 1 point')
+            points += 1
             break
     print('\n')  
       
@@ -40,7 +41,7 @@ def question2():
     print(r"+----------------------------+")
 
     while True:  
-        answer = input('Enter Your Answer a, b or c: ').lower()
+        answer = input('Enter Your Answer a, b or c: ')
         if answer != 'a' and answer != 'b' and answer != 'c':
             print('Enter a, b or c ! ')
             continue
@@ -66,7 +67,7 @@ def question3():
     print(r"+----------------------------+")
 
     while True: 
-        answer = input('Enter Your Answer a, b or c: ').lower()
+        answer = input('Enter Your Answer a, b or c: ')
         if answer != 'a' and answer != 'b' and answer != 'c':
             print('Enter a, b or c ! ')
             continue 
@@ -93,7 +94,7 @@ def question4():
     print(r"+----------------------------+")
 
     while True: 
-        answer = input('Enter Your Answer a, b or c: ').lower()
+        answer = input('Enter Your Answer a, b or c: ')
         if answer != 'a' and answer != 'b' and answer != 'c':
             print('Enter a, b or c ! ')
             continue 
@@ -120,7 +121,7 @@ def question5():
     print(r"+----------------------------+")
 
     while True: 
-        answer = input('Enter Your Answer a, b or c: ').lower()
+        answer = input('Enter Your Answer a, b or c: ')
         if answer != 'a' and answer != 'b' and answer != 'c':
             print('Enter a, b or c ! ')
             continue 
@@ -138,4 +139,4 @@ def question5():
 
 
 def all_points():
-    print(f'You got {points} out of 5 for the Easy HxH Quiz!')
+    print(f'You got {points} out of 5 for the Hard Hajime No Ippo Quiz!')

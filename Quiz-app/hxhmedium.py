@@ -1,7 +1,10 @@
 points = 0
-
+def reset_points():
+    global points 
+    points = 0
 
 def question1():
+    reset_points()
     global points
     print('The 1st Question Is \nWhat is the main reason Killua cannot initially command Allukas powers freely?')
     print(r"+---------------------------------------------------------+")
@@ -11,7 +14,7 @@ def question1():
     print(r"+---------------------------------------------------------+")
 
     while True:
-        answer = input('Enter Your Answer a, b or c: ')
+        answer = input('Enter Your Answer a, b or c: ').lower()
         if answer != 'a' and answer != 'b' and answer != 'c':
             print('Enter a, b or c ! ')
             continue
@@ -25,8 +28,7 @@ def question1():
         elif answer == 'c':
             print('Incorrect!')
             break   
-
-print('\n')  
+    print('\n')  
       
 def question2():
     global points
@@ -38,7 +40,7 @@ def question2():
     print(r"+---------------------------------------------+")
 
     while True:  
-        answer = input('Enter Your Answer a, b or c: ')
+        answer = input('Enter Your Answer a, b or c: ').lower()
         if answer != 'a' and answer != 'b' and answer != 'c':
             print('Enter a, b or c ! ')
             continue
@@ -64,7 +66,7 @@ def question3():
     print(r"+----------------------------+")
 
     while True: 
-        answer = input('Enter Your Answer a, b or c: ')
+        answer = input('Enter Your Answer a, b or c: ').lower()
         if answer != 'a' and answer != 'b' and answer != 'c':
             print('Enter a, b or c ! ')
             continue 
@@ -92,7 +94,7 @@ def question4():
     print(r"+----------------------------+")
 
     while True: 
-        answer = input('Enter Your Answer a, b or c: ')
+        answer = input('Enter Your Answer a, b or c: ').lower()
         if answer != 'a' and answer != 'b' and answer != 'c':
             print('Enter a, b or c ! ')
             continue 
@@ -120,7 +122,7 @@ def question5():
     print(r"+-----------------------------------------------------------+")
 
     while True: 
-        answer = input('Enter Your Answer a, b or c: ')
+        answer = input('Enter Your Answer a, b or c: ').lower()
         if answer != 'a' and answer != 'b' and answer != 'c':
             print('Enter a, b or c ! ')
             continue 

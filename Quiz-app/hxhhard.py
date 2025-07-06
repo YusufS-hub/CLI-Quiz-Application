@@ -1,4 +1,5 @@
 points = 0
+
 def reset_points():
     global points 
     points = 0
@@ -6,11 +7,11 @@ def reset_points():
 def question1():
     reset_points()
     global points
-    print('The 1st Question Is \nWhat type of Nen user is Gon?')
+    print('The 1st Question Is \nIn the Hunter Exam arc, which applicant number did Killua have?')
     print(r"+----------------------------+")
-    print(r"| a - Emitter                |")
-    print(r"| b - Enhancer               |")
-    print(r"| c - Transmitter            |")
+    print(r"| a - 44                     |")
+    print(r"| b - 405                    |")
+    print(r"| c - 99                     |")
     print(r"+----------------------------+")
 
     while True:
@@ -22,21 +23,21 @@ def question1():
             print('Incorrect!')
             break
         elif answer == 'b':
-            print('Correct! 1 point')
-            points += 1
-            break
-        elif answer == 'c':
             print('Incorrect!')
             break
+        elif answer == 'c':
+           print('Correct! 1 point')
+           points += 1
+           break
     print('\n')  
       
 def question2():
     global points
-    print('The 2nd Question Is \nWhich Phantom Troupe member uses a vacuum cleaner as a weapon?')
+    print('The 2nd Question Is \nDuring the dodgeball game on Greed Island, what position did Killua play?')
     print(r"+----------------------------+")
-    print(r"| a - Pakunoda               |")
-    print(r"| b - Uvogin                 |")
-    print(r"| c - Shizuku                |")
+    print(r"| a - Passer                 |")
+    print(r"| b - Receiver               |")
+    print(r"| c - Thrower                |")
     print(r"+----------------------------+")
 
     while True:  
@@ -48,22 +49,22 @@ def question2():
             print('Incorrect!')
             break
         elif answer == 'b':
-            print('Incorrect!')
-            break
-        elif answer == 'c':
             print('Correct! 1 point')
             points += 1
+            break
+        elif answer == 'c':
+            print('Incorrect!')
             break
     print('\n')
     
 def question3():
     global points
-    print('The 3rd Question Is \nWhat is the name of the exam stage where participants had to cook for the examiner?')
-    print(r"+----------------------------+")
-    print(r"| a - Stage 2                |")
-    print(r"| b - Stage 3                |")
-    print(r"| c - Stage 4                |")
-    print(r"+----------------------------+")
+    print('The 3rd Question Is \nWhat is the exact phrase Biscuit uses to introduce herself when she first meets Gon and Killua?')
+    print(r"+-------------------------------------------------------------+")
+    print(r"| a - “My names Biscuit, but call me Bisky!”                  |")
+    print(r"| b - “You can call me Bisky, short for Biscuit Krueger.”     |")
+    print(r"| c - “My name is Biscuit Krueger. Pleased to meet you.”      |")
+    print(r"+-------------------------------------------------------------+")
 
     while True: 
         answer = input('Enter Your Answer a, b or c: ').lower()
@@ -71,26 +72,26 @@ def question3():
             print('Enter a, b or c ! ')
             continue 
         elif answer == 'a':
-            print('Correct! 1 point')
-            points += 1
+            print('Incorrect!')
             break
         elif answer == 'b':
             print('Incorrect!')
             break
         elif answer == 'c':
-            print('Incorrect!')
+            print('Correct! 1 point')
+            points += 1
             break
     print('\n')
 
 
 def question4():
     global points
-    print('The 4th Question Is \nWhich Nen category does Kurapika use when his eyes turn scarlet?')
-    print(r"+----------------------------+")
-    print(r"| a - Specialist             |")
-    print(r"| b - Conjurer               |")
-    print(r"| c - Enhancer               |")
-    print(r"+----------------------------+")
+    print('The 4th Question Is \nIn the Phantom Troupe arc, which Spider number is Machi?')
+    print(r"+-------------------+")
+    print(r"| a - 4             |")
+    print(r"| b - 6             |")
+    print(r"| c - 3             |")
+    print(r"+-------------------+")
 
     while True: 
         answer = input('Enter Your Answer a, b or c: ').lower()
@@ -98,11 +99,12 @@ def question4():
             print('Enter a, b or c ! ')
             continue 
         elif answer == 'a':
-            print('Correct! 1 point')
+            print('Incorrect!')
             points += 1
             break
         elif answer == 'b':
-            print('Incorrect!')
+            print('Correct! 1 point')
+            points += 1
             break
         elif answer == 'c':
             print('Incorrect!')
@@ -112,12 +114,12 @@ def question4():
 
 def question5():
     global points
-    print('The Final Question Is \nWhat is the name of the video game Gon and Killua enter to find clues about Gons father?')
-    print(r"+----------------------------+")
-    print(r"| a - Hunters Arena          |")
-    print(r"| b - Greed Island           |")
-    print(r"| c - Nen World              |")
-    print(r"+----------------------------+")
+    print('The Final Question Is \nWhat was the first Greed Island spell card Gon successfully used during gameplay?')
+    print(r"+-----------------------+")
+    print(r"| a - Book              |")
+    print(r"| b - Gain              |")
+    print(r"| c - Accompany         |")
+    print(r"+-----------------------+")
 
     while True: 
         answer = input('Enter Your Answer a, b or c: ').lower()
