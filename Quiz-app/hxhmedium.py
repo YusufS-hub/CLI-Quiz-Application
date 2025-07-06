@@ -3,12 +3,12 @@ points = 0
 
 def question1():
     global points
-    print('The 1st Question Is \nWhat type of Nen user is Gon?')
-    print(r"+----------------------------+")
-    print(r"| a - Emitter                |")
-    print(r"| b - Enhancer               |")
-    print(r"| c - Transmitter            |")
-    print(r"+----------------------------+")
+    print('The 1st Question Is \nWhat is the main reason Killua cannot initially command Allukas powers freely?')
+    print(r"+---------------------------------------------------------+")
+    print(r"| a - He doesn't have enough aura control                 |")
+    print(r"| b - Only Nanika chooses who to obey                     |")
+    print(r"| c - He must truly consider Alluka a sibling, not a tool |")
+    print(r"+---------------------------------------------------------+")
 
     while True:
         answer = input('Enter Your Answer a, b or c: ')
@@ -24,20 +24,18 @@ def question1():
             break
         elif answer == 'c':
             print('Incorrect!')
-            break
-        if answer == 'b':
-            points += 1    
+            break   
 
 print('\n')  
       
 def question2():
     global points
-    print('The 2nd Question Is \nWhich Phantom Troupe member uses a vacuum cleaner as a weapon?')
-    print(r"+----------------------------+")
-    print(r"| a - Pakunoda               |")
-    print(r"| b - Uvogin                 |")
-    print(r"| c - Shizuku                |")
-    print(r"+----------------------------+")
+    print('The 2nd Question Is \nWhat condition does Shoots ability Hotel Rafflesia require to restrain a target?')
+    print(r"+----------------------------=================+")
+    print(r"| a - They must be injured                    |")
+    print(r"| b - He must touch them directly             |")
+    print(r"| c - They must enter the confined aura field |")
+    print(r"+---------------------------------------------+")
 
     while True:  
         answer = input('Enter Your Answer a, b or c: ')
@@ -45,26 +43,24 @@ def question2():
             print('Enter a, b or c ! ')
             continue
         elif answer == 'a':
-            print('Incorrect!')
+            print('Correct! 1 point')
+            points += 1
             break
         elif answer == 'b':
             print('Incorrect!')
             break
         elif answer == 'c':
-            print('Correct! 1 point')
-            points += 1
+            print('Incorrect!')
             break
-        if answer == 'c':
-            points += 1
     print('\n')
     
 def question3():
     global points
-    print('The 3rd Question Is \nWhat is the name of the exam stage where participants had to cook for the examiner?')
+    print('The 3rd Question Is \nWhat kind of Nen user is Morel?')
     print(r"+----------------------------+")
-    print(r"| a - Stage 2                |")
-    print(r"| b - Stage 3                |")
-    print(r"| c - Stage 4                |")
+    print(r"| a - Transmuter              |")
+    print(r"| b - Conjurer                |")
+    print(r"| c - Manipulator             |")
     print(r"+----------------------------+")
 
     while True: 
@@ -73,27 +69,26 @@ def question3():
             print('Enter a, b or c ! ')
             continue 
         elif answer == 'a':
-            print('Correct! 1 point')
+            print('Incorrect!')
             points += 1
             break
         elif answer == 'b':
-            print('Incorrect!')
+            print('Correct! 1 point')
+            points += 1
             break
         elif answer == 'c':
             print('Incorrect!')
             break
-        if answer == 'a':
-            points += 1
     print('\n')
 
 
 def question4():
     global points
-    print('The 4th Question Is \nWhich Nen category does Kurapika use when his eyes turn scarlet?')
+    print('The 4th Question Is \nWhat is the name of the Nen ability Kurapika uses that can only be activated when his eyes are scarlet?')
     print(r"+----------------------------+")
-    print(r"| a - Specialist             |")
-    print(r"| b - Conjurer               |")
-    print(r"| c - Enhancer               |")
+    print(r"| a - Holy Chain             |")
+    print(r"| b - Chain Jail             |")
+    print(r"| c - Emperor Time           |")
     print(r"+----------------------------+")
 
     while True: 
@@ -102,28 +97,27 @@ def question4():
             print('Enter a, b or c ! ')
             continue 
         elif answer == 'a':
-            print('Correct! 1 point')
+            print('Incorrect!')
             points += 1
             break
         elif answer == 'b':
             print('Incorrect!')
             break
         elif answer == 'c':
-            print('Incorrect!')
-            break
-        if answer == 'a':
+            print('Correct! 1 point')
             points += 1
+            break
     print('\n')
 
 
 def question5():
     global points
-    print('The Final Question Is \nWhat is the name of the video game Gon and Killua enter to find clues about Gons father?')
-    print(r"+----------------------------+")
-    print(r"| a - Hunters Arena          |")
-    print(r"| b - Greed Island           |")
-    print(r"| c - Nen World              |")
-    print(r"+----------------------------+")
+    print('The Final Question Is \nWhat restriction does Kurapika place on Chain Jail to increase its power?')
+    print(r"+-----------------------------------------------------------+")
+    print(r"| a - He can only use it during Emperor Time                |")
+    print(r"| b - He can only use it on members of the Phantom Troupe   |")
+    print(r"| c - He loses a year of his life each use                  |")
+    print(r"+-----------------------------------------------------------+")
 
     while True: 
         answer = input('Enter Your Answer a, b or c: ')
@@ -144,4 +138,4 @@ def question5():
 
 
 def all_points():
-    print(f'You got {points} out of 5 for the Easy HxH Quiz!')
+    print(f'You got {points} out of 5 for the Medium HxH Quiz!')

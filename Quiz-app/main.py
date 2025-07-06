@@ -1,5 +1,6 @@
 import anime
 import hxheasy
+import hxhmedium
 import os
 
 
@@ -67,6 +68,14 @@ def main():
                                 hxheasy.question4()
                                 hxheasy.question5()
                                 hxheasy.all_points()
+                            elif hxh_option == 2:
+                                clear_menu()
+                                hxhmedium.question1()
+                                hxhmedium.question2()
+                                hxhmedium.question3()
+                                hxhmedium.question4()
+                                hxhmedium.question5()
+                                hxhmedium.all_points()
         except (ValueError, UnboundLocalError):
             print('Invalid Input Enter numbers (0-3)')
 main()

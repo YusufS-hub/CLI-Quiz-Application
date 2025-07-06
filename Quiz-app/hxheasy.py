@@ -25,8 +25,6 @@ def question1():
         elif answer == 'c':
             print('Incorrect!')
             break
-        if answer == 'b':
-            points += 1    
 
 print('\n')  
       
@@ -54,8 +52,6 @@ def question2():
             print('Correct! 1 point')
             points += 1
             break
-        if answer == 'c':
-            points += 1
     print('\n')
     
 def question3():
@@ -82,8 +78,6 @@ def question3():
         elif answer == 'c':
             print('Incorrect!')
             break
-        if answer == 'a':
-            points += 1
     print('\n')
 
 
@@ -111,8 +105,6 @@ def question4():
         elif answer == 'c':
             print('Incorrect!')
             break
-        if answer == 'a':
-            points += 1
     print('\n')
 
 
