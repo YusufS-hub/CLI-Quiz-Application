@@ -64,6 +64,9 @@ def main():
                                 hxheasy.question1()
                                 hxheasy.question2()
                                 hxheasy.question3()
+                                hxheasy.question4()
+                                hxheasy.question5()
+                                hxheasy.all_points()
         except (ValueError, UnboundLocalError):
             print('Invalid Input Enter numbers (0-3)')
 main()
