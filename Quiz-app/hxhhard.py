@@ -140,4 +140,4 @@ def question5():
 
 
 def all_points():
-    print(f'You got {points} out of 5 for the Easy HxH Quiz!')
+    print(f'You got {points} out of 5 for the Hard HxH Quiz!')

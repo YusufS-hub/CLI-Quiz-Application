@@ -15,7 +15,7 @@ def question1():
     print(r"+---------------------------------------+")
 
     while True:
-        answer = input('Enter Your Answer a, b or c: ')
+        answer = input('Enter Your Answer a, b or c: ').lower()
         if answer != 'a' and answer != 'b' and answer != 'c':
             print('Enter a, b or c ! ')
             continue
@@ -33,50 +33,50 @@ def question1():
       
 def question2():
     global points
-    print('The 2nd Question Is \nWhich Phantom Troupe member uses a vacuum cleaner as a weapon?')
+    print('The 2nd Question Is \nWhich of these opponents did Ippo defeat with a counter punch instead of pressure fighting?')
     print(r"+----------------------------+")
-    print(r"| a - Pakunoda               |")
-    print(r"| b - Uvogin                 |")
-    print(r"| c - Shizuku                |")
+    print(r"| a - Kobashi               |")
+    print(r"| b - Sanada                 |")
+    print(r"| c - Hayami                |")
     print(r"+----------------------------+")
 
     while True:  
-        answer = input('Enter Your Answer a, b or c: ')
+        answer = input('Enter Your Answer a, b or c: ').lower()
         if answer != 'a' and answer != 'b' and answer != 'c':
             print('Enter a, b or c ! ')
             continue
         elif answer == 'a':
-            print('Incorrect!')
+            print('Correct! 1 point')
+            points += 1
             break
         elif answer == 'b':
             print('Incorrect!')
             break
         elif answer == 'c':
-            print('Correct! 1 point')
-            points += 1
+            print('Incorrect!')
             break
     print('\n')
     
 def question3():
     global points
-    print('The 3rd Question Is \nWhat is the name of the exam stage where participants had to cook for the examiner?')
+    print('The 3rd Question Is \nWhat food does Ippo bring Takamura to thank him after their first training session?')
     print(r"+----------------------------+")
-    print(r"| a - Stage 2                |")
-    print(r"| b - Stage 3                |")
-    print(r"| c - Stage 4                |")
+    print(r"| a - Rice balls             |")
+    print(r"| b - Mackerel               |")
+    print(r"| c - Bento box              |")
     print(r"+----------------------------+")
 
     while True: 
-        answer = input('Enter Your Answer a, b or c: ')
+        answer = input('Enter Your Answer a, b or c: ').lower()
         if answer != 'a' and answer != 'b' and answer != 'c':
             print('Enter a, b or c ! ')
             continue 
         elif answer == 'a':
-            print('Correct! 1 point')
-            points += 1
+            print('Incorrect!')
             break
         elif answer == 'b':
-            print('Incorrect!')
+            print('Correct! 1 point')
+            points += 1
             break
         elif answer == 'c':
             print('Incorrect!')
@@ -86,24 +86,24 @@ def question3():
 
 def question4():
     global points
-    print('The 4th Question Is \nWhich Nen category does Kurapika use when his eyes turn scarlet?')
-    print(r"+----------------------------+")
-    print(r"| a - Specialist             |")
-    print(r"| b - Conjurer               |")
-    print(r"| c - Enhancer               |")
-    print(r"+----------------------------+")
+    print('The 4th Question Is \nWhat did Ippo write on his application form to become a pro boxer under "Reason for joining"?')
+    print(r"+------------------------------------------------+")
+    print(r"| a - To become strong                           |")
+    print(r"| b - To find out what it means to be strong.    |")
+    print(r"| c - To protect the people I care about.        |")
+    print(r"+------------------------------------------------+")
 
     while True: 
-        answer = input('Enter Your Answer a, b or c: ')
+        answer = input('Enter Your Answer a, b or c: ').lower()
         if answer != 'a' and answer != 'b' and answer != 'c':
             print('Enter a, b or c ! ')
             continue 
         elif answer == 'a':
-            print('Correct! 1 point')
-            points += 1
+            print('Incorrect!')
             break
         elif answer == 'b':
-            print('Incorrect!')
+            print('Correct! 1 point')
+            points += 1
             break
         elif answer == 'c':
             print('Incorrect!')
@@ -113,24 +113,24 @@ def question4():
 
 def question5():
     global points
-    print('The Final Question Is \nWhat is the name of the video game Gon and Killua enter to find clues about Gons father?')
+    print('The Final Question Is \nWhat specific injury did Kamogawa sustain in his final boxing match that forced him to retire?')
     print(r"+----------------------------+")
-    print(r"| a - Hunters Arena          |")
-    print(r"| b - Greed Island           |")
-    print(r"| c - Nen World              |")
+    print(r"| a - Detached retina        |")
+    print(r"| b - Broken right hand      |")
+    print(r"| c - Shattered ribs         |")
     print(r"+----------------------------+")
 
     while True: 
-        answer = input('Enter Your Answer a, b or c: ')
+        answer = input('Enter Your Answer a, b or c: ').lower()
         if answer != 'a' and answer != 'b' and answer != 'c':
             print('Enter a, b or c ! ')
             continue 
         elif answer == 'a':
-            print('Incorrect!')
-            break
-        elif answer == 'b':
             print('Correct! 1 point')
             points += 1
+            break
+        elif answer == 'b':
+            print('Incorrect!')
             break
         elif answer == 'c':
             print('Incorrect!')

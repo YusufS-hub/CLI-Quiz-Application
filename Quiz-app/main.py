@@ -3,6 +3,7 @@ import hxheasy
 import hxhmedium
 import hxhhard
 import hajimehard
+import Onepiecehard
 import os
 
 
@@ -110,6 +111,31 @@ def main():
                                 hajimehard.question4()
                                 hajimehard.question5()
                                 hajimehard.all_points()
+                    elif anime_menu_option == 3:
+                        clear_menu()
+                        while True:
+                            anime.difficulty_Onepiece()
+                            one_option = int(input('Enter a number corresponding to what option you would like (0-3): '))
+                            if one_option == 0:
+                                clear_menu()
+                                print('You Have Returned To The Anime Menu')
+                                break
+                            elif one_option == 1:
+                                clear_menu()
+                                print('No Easy For this Anime')
+                                break
+                            elif one_option == 2:
+                                print('No Medium For this Anime')
+                                break
+                            elif one_option == 3:
+                                clear_menu()
+                                Onepiecehard.question1()
+                                Onepiecehard.question2()
+                                Onepiecehard.question3()
+                                Onepiecehard.question4()
+                                Onepiecehard.question5()
+                                Onepiecehard.all_points()
+                               
         except (ValueError, UnboundLocalError):
             print('Invalid Input Enter numbers (0-3)')
 main()
